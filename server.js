@@ -3,6 +3,7 @@ const bodyParser = require ('body-parser') // body parser pozwala na odczytanie 
 const cors = require('cors') // cross origin resource sharing
 const { sendMail } = require('./controllers/sendmail/sendmail.js')
 const { ProductsGet } = require('./controllers/Products/ProductsGet.js')
+require('dotenv').config();
 
 const app = express();
 app.use(bodyParser.json())
