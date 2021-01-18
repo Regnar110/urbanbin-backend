@@ -2,6 +2,7 @@ const {transporter}= require('./transporter.js')
 const {mailConfig}= require('./mailconfig.js')
 
 const sendMail = (req, res) => { //funkcja wysyłająca dane przysłane ze strony klienta.
+    console.log(mailConfig)
     const name = req.body.sender;
     const email = req.body.email;
     const message = req.body.message
