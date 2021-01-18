@@ -11,7 +11,7 @@ const ProductsGet = async (model, req, res) => {
   try {
     await client.connect();
 
-    const database = client.db('Products')
+    const database = client.db('UrbanbinDB')
     const collection = database.collection(model)
   
     const query = { name: model}
