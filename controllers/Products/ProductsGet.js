@@ -1,8 +1,6 @@
 const {MongoClient} = require('mongodb');
-require('dotenv').config();
 
 const uri = process.env.DB_AUTH
-
 
 const ProductsGet = async (model, req, res) => {
   console.log(uri)
